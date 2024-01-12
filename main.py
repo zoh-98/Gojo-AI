@@ -4,8 +4,8 @@ from characterai import PyCAI
 
 app = Flask(__name__)
 
-client = PyCAI(os.environ['CLIENT'])
-char = os.environ['CHAR']
+client = PyCAI('bb27dbf32c4d80e8043ff0248bc389212aed808f')
+char = 'dIjBbIvorS30L3fzQFha-q6khtV9S-cwrV4Nhjp-pJw'
 chat = client.chat.get_chat(char)
 participants = chat['participants']
 
